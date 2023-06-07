@@ -38,7 +38,9 @@
 
 ![image-20230607112905732](./assets/image-20230607112905732.png)
 
-3. 配置需要查重的代码的目录结构，最终需要是一个`base-sid-targetPackage`的**三层结构**。举个例子来说，我将`base`文件夹设置为基础文件夹，`sid`分别是`11910000`，`12010000`，`12110000`，`12210000`，`targetPackage`是`SafetyAreaInRA2`。注：这个`targetPackage`不一定要和源代码文件名称一样，但需要所有学生的目录名称都保持统一。
+### 第二步：配置目录结构
+
+配置需要查重的代码的目录结构，最终需要是一个`base-sid-targetPackage`的**三层结构**。举个例子来说，我将`base`文件夹设置为基础文件夹，`sid`分别是`11910000`，`12010000`，`12110000`，`12210000`，`targetPackage`是`SafetyAreaInRA2`。注：这个`targetPackage`不一定要和源代码文件名称一样，但需要所有学生的目录名称都保持统一。
 
 使用`tree`命令得到的效果如下：
 
@@ -68,21 +70,23 @@ D:\IDEAPROJECTS\JAVADUPLICATIONCHECKER\BASE
 
 ![image-20230607114451438](./assets/image-20230607114451438.png)
 
-4. 配置IDEA中的命令行参数，详细信息如下。
+### 第三步：在IDEA中配置参数并运行
 
-   ```
-   usage: CommandLine Example:
-    -a,--all            check all problem subDirectories
-    -b,--base <arg>     base directory
-    -o,--output <arg>   result output file
-    -t,--target <arg>   result target file
-   ```
+1. 配置IDEA中的命令行参数，详细信息如下。
 
-   例如：
+```
+usage: CommandLine Example:
+ -a,--all            check all problem subDirectories
+ -b,--base <arg>     base directory
+ -o,--output <arg>   result output file
+ -t,--target <arg>   result target file
+```
+
+例如：
 
 ![image-20230607115159103](./assets/image-20230607115159103.png)
 
-5. 在IDEA中运行，可以看到有查重结果：
+2. 在IDEA中运行，可以看到有查重结果：
 
 ![image-20230607115413629](./assets/image-20230607115413629.png)
 ![image-20230607115456200](./assets/image-20230607115456200.png)
