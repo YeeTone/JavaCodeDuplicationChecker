@@ -1,7 +1,5 @@
 package checker;
 
-import tool.GlobalConfiguration;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -12,9 +10,9 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Arrays;
 import java.util.Objects;
 
-import static tool.Assert.assertion;
+import static tool.assertion.Assert.assertion;
 
-public class CopyAndRewrite {
+class CopyAndRewrite {
     private CopyAndRewrite(){
         throw new RuntimeException("No instance allowed!");
     }

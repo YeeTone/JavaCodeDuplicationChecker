@@ -4,7 +4,6 @@ import jplag.ExitException;
 import jplag.Program;
 import jplag.options.CommandLineOptions;
 import jplag.options.Options;
-import tool.GlobalConfiguration;
 
 import java.io.File;
 import java.io.IOException;
